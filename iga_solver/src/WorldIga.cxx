@@ -3,8 +3,8 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "iga_solver/World.h"
-#include "mesh_converter/World.h"
+#include "WorldIga.h"
+#include "WorldMesh.h"
 
 #include <iostream>
 

@@ -3,8 +3,8 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "iga_solver/World.h"
-#include "iga_solver/Version.h"
+#include "WorldIga.h"
+#include "Version.h"
 #include <boost/program_options.hpp>
 #include <iostream>
 

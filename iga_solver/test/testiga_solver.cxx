@@ -3,7 +3,7 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "iga_solver/World.h"
+#include "WorldIga.h"
 
 #define BOOST_TEST_MODULE hello test
 #define BOOST_TEST_MAIN

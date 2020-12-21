@@ -1,11 +1,11 @@
 # @author  Barthélémy von Haller
 set(LIB_HEADERS
-  "${CMAKE_CURRENT_BINARY_DIR}/../include/iga_solver/Version.h"
-  ../include/iga_solver/World.h
+  "${CMAKE_CURRENT_BINARY_DIR}/../include/Version.h"
+  ../include/WorldIga.h
 )
 
 set(LIB_SOURCES
-  World.cxx
+  WorldIga.cxx
 )
 
 set(APP_HEADERS
@@ -22,7 +22,7 @@ set(LIBRARY_NAME iga_solver)
 add_library(${LIBRARY_NAME} SHARED ${LIB_SOURCES})
 
 # Set the build version. It will be used in the name of the lib, with corresponding
-# symlinks created. SOVERSION could also be specified for api version. 
+# symlinks created. SOVERSION could also be specified for api version.
 set_target_properties(${LIBRARY_NAME} PROPERTIES
   VERSION ${VERSION}  # ${VERSION} was defined in the main CMakeLists.
   FRAMEWORK FALSE
@@ -33,7 +33,7 @@ set_target_properties(${LIBRARY_NAME} PROPERTIES
 target_link_libraries(${LIBRARY_NAME} mesh_converter)
 
 # This is a make target, so you can do a "make projBrunner"
-set(APPLICATION_NAME projBrunner)
+set(APPLICATION_NAME xiga_solver)
 add_executable(${APPLICATION_NAME} ${APP_SOURCES})
 
 # Links the target exe (projBrunner) against the library (libprojB) and other required libraries

@@ -1,11 +1,11 @@
 # @author  Barthélémy von Haller
 set(LIB_HEADERS
-  "${CMAKE_CURRENT_BINARY_DIR}/../include/mesh_converter/Version.h" # Generated header
-  ../include/mesh_converter/World.h # Normal header
+  "${CMAKE_CURRENT_BINARY_DIR}/../include/Version.h" # Generated header
+  ../include/WorldMesh.h # Normal header
 )
 
 set(LIB_SOURCES
-  World.cxx
+  WorldMesh.cxx
 )
 
 set(APP_HEADERS
@@ -22,7 +22,7 @@ set(LIBRARY_NAME mesh_converter)
 add_library(${LIBRARY_NAME} SHARED ${LIB_SOURCES})
 
 # Set the build version. It will be used in the name of the lib, with corresponding
-# symlinks created. SOVERSION could also be specified for api version. 
+# symlinks created. SOVERSION could also be specified for api version.
 set_target_properties(${LIBRARY_NAME} PROPERTIES
   VERSION ${VERSION}  # ${VERSION} was defined in the main CMakeLists.
   FRAMEWORK FALSE
@@ -30,7 +30,7 @@ set_target_properties(${LIBRARY_NAME} PROPERTIES
 )
 
 # This is a make target, so you can do a "make projArunner"
-set(APPLICATION_NAME projArunner)
+set(APPLICATION_NAME xmesh_converter)
 add_executable(${APPLICATION_NAME} ${APP_SOURCES})
 
 # Links the target exe (projArunner) against the library (libprojA) and other required libraries

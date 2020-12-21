@@ -3,7 +3,7 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "mesh_converter/World.h"
+#include "WorldMesh.h"
 
 #include <iostream>
 

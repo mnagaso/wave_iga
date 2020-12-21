@@ -3,8 +3,8 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "mesh_converter/World.h"
-#include "mesh_converter/Version.h"
+#include "WorldMesh.h"
+#include "Version.h"
 #include <boost/program_options.hpp>
 #include <iostream>
 

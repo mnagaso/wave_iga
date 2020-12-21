@@ -3,7 +3,7 @@
 /// @author  Barthelemy von Haller
 ///
 
-#include "mesh_converter/World.h"
+#include "WorldMesh.h"
 
 #define BOOST_TEST_MODULE hello test
 #define BOOST_TEST_MAIN
